@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3>
+   Usunąć wpis:
+</h3>
+
+<form action="" method="POST">
+  {{form.hidden_tag()}}
+   <div class="form-group">
+       <label for="title">Tytuł wpisu</label>
+       {{ form.title(class_="form-control") }}
+   </div>
+
+   <button type="submit" class="btn btn-danger">Usuń</button>
+</form>
+
+{% endblock %}
